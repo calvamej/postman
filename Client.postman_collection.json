@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "8cf1702f-de99-44a7-9959-226fc206a410",
+		"name": "Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/FindOne/987654321",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"FindOne",
+						"987654321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"63a003d49a1faa59fedbba50\",\r\n    \"documentNumber\": \"987654321\",\r\n    \"documentType\": \"RUC\",\r\n    \"clientType\": \"Business\",\r\n    \"clientSubType\": null,\r\n    \"name\": null,\r\n    \"lastname\": null,\r\n    \"companyName\": \"Empresa 2 SAC\",\r\n    \"companyDescription\": \"Empresa Prueba 2\",\r\n    \"createDate\": \"19-12-2022\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Client/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/Update/12345698/PYME",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"Update",
+						"12345698",
+						"PYME"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/Delete/45495180",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"Delete",
+						"45495180"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/CheckClient/987654321",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"CheckClient",
+						"987654321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByDocument",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Client/FindByDocument/45495180",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"FindByDocument",
+						"45495180"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"documentNumber\": \"45495180\",\r\n        \"documentType\": \"DNI\",\r\n        \"clientSubType\": \"VIP\",\r\n        \"name\": \"Pedro\",\r\n        \"lastname\": \"Prueba\",\r\n        \"companyName\": null,\r\n        \"companyDescription\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Client/RegisterPerson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"RegisterPerson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterBusiness",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"documentNumber\": \"12345698\",\r\n        \"documentType\": \"RUC\",\r\n        \"clientSubType\": null,\r\n        \"name\": null,\r\n        \"lastname\": null,\r\n        \"companyName\": \"Empresa SA\",\r\n        \"companyDescription\": \"Empresa Prueba\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Client/RegisterBusiness",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Client",
+						"RegisterBusiness"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

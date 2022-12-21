@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "b9e7567b-c8d7-4737-9bcb-36e84d1b48ac",
+		"name": "BootcoinOperation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetPurchaseRequests",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AcceptPurchaseRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/BootcoinOperation/AcceptPurchaseRequest/63a33b278f365815c8915949/88888888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"BootcoinOperation",
+						"AcceptPurchaseRequest",
+						"63a33b278f365815c8915949",
+						"88888888"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

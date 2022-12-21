@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "67f73823-973a-46d2-8c16-39e6c0a3bc76",
+		"name": "Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/FindOne/AC00004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"FindOne",
+						"AC00004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "       {\r\n        \"accountNumber\": \"AC00005\",\r\n        \"productCode\": \"SA\",\r\n        \"clientDocumentNumber\": \"123457225\",\r\n        \"clientType\": \"P\",\r\n        \"clientSubType\": \"VIP\",\r\n        \"balance\": 400.0,\r\n        \"operationalDebt\": 0.0,\r\n        \"owners\": null,\r\n        \"signatories\": null,\r\n        \"hasDebitCard\": null,\r\n        \"debitCardNumber\": null,\r\n        \"debitCardMainAccount\": null,\r\n        \"debitCardPriorityOrder\": 0,\r\n        \"minimumOpeningBalance\": 200,\r\n        \"minimumDailyBalance\": 300.0,\r\n        \"maintenanceCost\": 100.0,\r\n        \"maxMonthlyOperations\": 2,\r\n        \"currentMonthOperations\": 0,\r\n        \"maxFreeOperations\": 0,\r\n        \"commissionPercentage\" : 0.01\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Account/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/Update/AC00005/5555",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"Update",
+						"AC00005",
+						"5555"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/Delete/AC00005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"Delete",
+						"AC00005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPersonal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"accountNumber\": \"AC00003\",\r\n        \"productCode\": \"FT\",\r\n        \"clientDocumentNumber\": \"654321\",\r\n        \"clientType\": \"P\",\r\n        \"clientSubType\": \"VIP\",\r\n        \"balance\": 10000.0,\r\n        \"operationalDebt\": 0.0,\r\n        \"owners\": null,\r\n        \"signatories\": null,\r\n        \"hasDebitCard\": null,\r\n        \"debitCardNumber\": null,\r\n        \"debitCardMainAccount\": null,\r\n        \"debitCardPriorityOrder\": 0,\r\n        \"minimumOpeningBalance\": 1000,\r\n        \"minimumDailyBalance\": 0,\r\n        \"maintenanceCost\": 0,\r\n        \"maxMonthlyOperations\": 1,\r\n        \"currentMonthOperations\": 0,\r\n        \"maxFreeOperations\": 0,\r\n        \"commissionPercentage\" : 0.01\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Account/RegisterPersonal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"RegisterPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n        \"accountNumber\": \"AC00004\",\r\n        \"productCode\": \"CA\",\r\n        \"clientDocumentNumber\": \"333222222\",\r\n        \"clientType\": \"P\",\r\n        \"clientSubType\": \"VIP\",\r\n        \"balance\": 400.0,\r\n        \"operationalDebt\": 0.0,\r\n\t        \"owners\": [\r\n            {\r\n                \"documentNumber\": \"45669985\",\r\n                \"documentType\": \"DNI\",\r\n                \"name\": \"Bus\",\r\n                \"lastName\": \"Tostel\"\r\n            }\r\n        ],\r\n        \"signatories\": null,\r\n        \"hasDebitCard\": null,\r\n        \"debitCardNumber\": null,\r\n        \"debitCardMainAccount\": null,\r\n        \"debitCardPriorityOrder\": 0,\r\n        \"minimumOpeningBalance\": 200,\r\n        \"minimumDailyBalance\": 300.0,\r\n        \"maintenanceCost\": 100.0,\r\n        \"maxMonthlyOperations\": 2,\r\n        \"currentMonthOperations\": 0,\r\n        \"maxFreeOperations\": 0,\r\n        \"commissionPercentage\" : 0.01\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Account/RegisterCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"RegisterCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetByClient/123457225",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetByClient",
+						"123457225"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetBalance/AC00001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetBalance",
+						"AC00001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DepositBalance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/DepositBalance/A00017/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"DepositBalance",
+						"A00017",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WithdrawBalance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/WithdrawBalance/A00017/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"WithdrawBalance",
+						"A00017",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ApplyMaintenanceFee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/ApplyMaintenanceFee/A00011/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"ApplyMaintenanceFee",
+						"A00011",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckIfCommissionApply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/CheckIfCommissionApply/A00019/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"CheckIfCommissionApply",
+						"A00019",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckVIPMinimumBalanceCompliance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/CheckVIPMinimumBalanceCompliance/AC00025/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"CheckVIPMinimumBalanceCompliance",
+						"AC00025",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAverageBalanceByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetAverageBalanceByClient/45495188/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetAverageBalanceByClient",
+						"45495188",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccountsByDates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetAccountsByDates/15-12-2022/31-12-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetAccountsByDates",
+						"15-12-2022",
+						"31-12-2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccountsByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetAccountsByClient/45495188/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetAccountsByClient",
+						"45495188",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransferBalance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/TransferBalance/AC00025/AC00021/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"TransferBalance",
+						"AC00025",
+						"AC00021",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LinkDebitCardMainAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/LinkDebitCardMainAccount/AC00004/T0123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"LinkDebitCardMainAccount",
+						"AC00004",
+						"T0123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LinkDebitCardSecondaryAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/LinkDebitCardSecondaryAccount/A00019/T0123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"LinkDebitCardSecondaryAccount",
+						"A00019",
+						"T0123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDebitCardMainAccountBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetDebitCardMainAccountBalance/T0123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetDebitCardMainAccountBalance",
+						"T0123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDebitCardNextPriorityOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/GetDebitCardNextPriorityOrder/T0123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"GetDebitCardNextPriorityOrder",
+						"T0123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDebitCardPayment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Account/AddDebitCardPayment/T0123/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Account",
+						"AddDebitCardPayment",
+						"T0123",
+						"500"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

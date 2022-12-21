@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "f46eca65-b245-496f-b917-9c6d27b8b038",
+		"name": "Operation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/FindOne/O0003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"FindOne",
+						"O0003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operationNumber\": \"O0003\",\r\n    \"operationType\": \"WITHDRAW\",\r\n    \"clientDocumentNumber\": \"45495180\",\r\n    \"clientType\": \"P\",\r\n    \"productCode\": \"SA\",\r\n    \"accountNumber\": \"A0001\",\r\n    \"creditNumber\": null,\r\n    \"debitCardNumber\": null,\r\n    \"creditCardNumber\": null,\r\n    \"operationMadeBy\": \"CLIENT\",\r\n    \"amount\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Operation/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/Update/O0003/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"Update",
+						"O0003",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/Delete/O0003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"Delete",
+						"O0003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operationNumber\": \"O00018\",\r\n    \"operationType\": \"DEPOSIT\",\r\n    \"clientDocumentNumber\": \"45495180\",\r\n    \"clientType\": \"P\",\r\n    \"productCode\": \"CC\",\r\n    \"accountNumber\": \"A0001\",\r\n    \"creditNumber\": null,\r\n    \"debitCardNumber\": null,\r\n    \"creditCardNumber\": \"3333\",\r\n    \"operationMadeBy\": \"CLIENT\",\r\n    \"amount\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Operation/Add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"Add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByClientAndProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetByClientAndProduct/45495180/SA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetByClientAndProduct",
+						"45495180",
+						"SA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetByAccount/A0001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetByAccount",
+						"A0001",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByCredit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetByCredit/C0001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetByCredit",
+						"C0001",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCommissionsByProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetCommissionsByDates/01-12-2022/25-12-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetCommissionsByDates",
+						"01-12-2022",
+						"25-12-2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLast10ByDebitCard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetLast10ByDebitCard/4567",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetLast10ByDebitCard",
+						"4567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLast10ByCreditCard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Operation/GetLast10ByCreditCard/3333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Operation",
+						"GetLast10ByCreditCard",
+						"3333"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

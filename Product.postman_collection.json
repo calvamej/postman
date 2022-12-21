@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "f4e1cc20-4283-4297-91eb-37602a5e4274",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/FindOne/TT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"FindOne",
+						"TT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productCode\": \"TT\",\r\n        \"productName\": \"TEST ACCOUNT\",\r\n        \"productType\": \"ACCOUNT\",\r\n        \"minimumOpeningBalance\": \"100\",\r\n        \"maintenanceCost\": \"5\",\r\n        \"minimumDailyBalance\": 0,\r\n        \"commissionPercentage\": 0.01,\r\n        \"maxMonthlyOperations\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Product/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/Update/TT/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"Update",
+						"TT",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/Delete/TT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"Delete",
+						"TT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/FindByCode/SA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"FindByCode",
+						"SA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/FindByType/CREDIT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"FindByType",
+						"CREDIT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"productCode\": \"PC\",\r\n        \"productName\": \"PERSONAL CREDIT\",\r\n        \"productType\": \"CREDIT\",\r\n        \"minimumOpeningBalance\": 0,\r\n        \"maintenanceCost\": 0,\r\n        \"minimumDailyBalance\": 0,\r\n        \"commissionPercentage\": 0,\r\n        \"maxMonthlyOperations\": 0\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Product/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBootCoinPurchaseRate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/UpdateBootCoinPurchaseRate/BC/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"UpdateBootCoinPurchaseRate",
+						"BC",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBootCoinSaleRate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Product/UpdateBootCoinSaleRate/BC/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Product",
+						"UpdateBootCoinSaleRate",
+						"BC",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

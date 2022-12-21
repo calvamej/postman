@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "a4defa3b-8d43-46a0-b820-61cae5e6441e",
+		"name": "Yanki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/FindOne/987654321",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"FindOne",
+						"987654321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"987654321\",\r\n    \"documentType\": \"DNI\",\r\n    \"name\": \"Juan\",\r\n    \"lastname\": \"Prueba\",\r\n    \"mobileNumber\": \"99999999\",\r\n    \"email\": \"test@email.com\",\r\n    \"debitCard\": \"12345\",\r\n    \"balance\": 0,\r\n    \"createDate\": \"19-12-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Yanki/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/Update/987654321/testeo@email.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"Update",
+						"987654321",
+						"testeo@email.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/Delete/987654321",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"Delete",
+						"987654321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/Post?debitCardNumber=T0123&type=Receive&amount=500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"Post"
+					],
+					"query": [
+						{
+							"key": "debitCardNumber",
+							"value": "T0123"
+						},
+						{
+							"key": "type",
+							"value": "Receive"
+						},
+						{
+							"key": "amount",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"987654321\",\r\n    \"documentType\": \"DNI\",\r\n    \"name\": \"Juan\",\r\n    \"lastname\": \"Prueba\",\r\n    \"mobileNumber\": \"123456\",\r\n    \"imei\": \"99999999\",\r\n    \"email\": \"test@email.com\",\r\n    \"debitCardNumber\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Yanki/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LinkDebitCard",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Yanki/LinkDebitCard/987654321/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Yanki",
+						"LinkDebitCard",
+						"987654321",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

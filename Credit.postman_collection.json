@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "9a90b527-d7fc-4512-89b6-4af909ebf49a",
+		"name": "Credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"FindAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/FindOne/C00001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"FindOne",
+						"C00001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditNumber\": \"C00001\",\r\n    \"productCode\": \"CC\",\r\n    \"clientDocumentNumber\": \"45669988\",\r\n    \"clientType\": \"P\",\r\n    \"clientSubType\": null,\r\n    \"creditCardNumber\": \"123456\",\r\n    \"accountNumber\": null,\r\n    \"currentDebt\": 1000,\r\n    \"creditLimit\": 1500,\r\n    \"debtDueDate\": \"19-12-2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Credit/Save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"Save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/Update/C00001/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"Update",
+						"C00001",
+						"500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/Delete/C00004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"Delete",
+						"C00004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPersonal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditNumber\": \"C00002\",\r\n    \"productCode\": \"CC\",\r\n    \"clientDocumentNumber\": \"45669987\",\r\n    \"clientSubType\": null,\r\n    \"creditCardNumber\": \"1234567\",\r\n    \"accountNumber\": null,\r\n    \"currentDebt\": 1000,\r\n    \"creditLimit\": 1500,\r\n    \"debtDueDate\": \"01-12-2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Credit/RegisterPersonal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"RegisterPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterBusiness",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditNumber\": \"C00002\",\r\n    \"productCode\": \"CC\",\r\n    \"clientDocumentNumber\": \"45669988\",\r\n    \"clientSubType\": null,\r\n    \"creditCardNumber\": \"123456\",\r\n    \"accountNumber\": null,\r\n    \"currentDebt\": 1000,\r\n    \"creditLimit\": 1500,\r\n    \"debtDueDate\": \"19-12-2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Credit/RegisterBusiness",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"RegisterBusiness"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PayCredit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/PayCredit/C00001/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"PayCredit",
+						"C00001",
+						"500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCreditCardConsume",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/AddCreditCardConsume/123456/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"AddCreditCardConsume",
+						"123456",
+						"500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetByClient/45669988",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetByClient",
+						"45669988"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCurrentDebt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetCurrentDebt/C00001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetCurrentDebt",
+						"C00001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCreditCardAvailableBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetCreditCardAvailableBalance/C00001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetCreditCardAvailableBalance",
+						"C00001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckDueDebtByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/CheckDueDebtByClient/45669987",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"CheckDueDebtByClient",
+						"45669987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCreditsByDates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetCreditsByDates/01-12-2022/20-12-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetCreditsByDates",
+						"01-12-2022",
+						"20-12-2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCreditsByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetCreditsByClient/45669988",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetCreditsByClient",
+						"45669988"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAverageDebtByClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/GetAverageDebtByClient/45669988",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"GetAverageDebtByClient",
+						"45669988"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
