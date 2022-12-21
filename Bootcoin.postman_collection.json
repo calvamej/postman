@@ -114,6 +114,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"45495180\",\r\n    \"documentType\": \"DNI\",\r\n    \"name\": \"Pedro\",\r\n    \"lastname\": \"Prueba\",\r\n    \"mobileNumber\": \"994455693\",\r\n    \"email\": \"pedroprueba@gmail.com\",\r\n    \"accountNumber\": null,\r\n    \"hasYanki\": false,\r\n    \"balance\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:9090/Bootcoin/Register",
 					"protocol": "http",
@@ -133,7 +142,22 @@
 			"name": "RequestPurchase",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Bootcoin/RequestPurchase/45495180/YANKI/120",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Bootcoin",
+						"RequestPurchase",
+						"45495180",
+						"YANKI",
+						"120"
+					]
+				}
 			},
 			"response": []
 		}

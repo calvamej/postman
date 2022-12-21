@@ -204,7 +204,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/Credit/AddCreditCardConsume/123456/500",
+					"raw": "http://localhost:9090/Credit/AddCreditCardConsume/1234567/100",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -213,8 +213,8 @@
 					"path": [
 						"Credit",
 						"AddCreditCardConsume",
-						"123456",
-						"500"
+						"1234567",
+						"100"
 					]
 				}
 			},
@@ -363,6 +363,40 @@
 						"Credit",
 						"GetAverageDebtByClient",
 						"45669988"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Credit/Post?debitCardNumber=T0123&operationType=Receive&amount=500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Credit",
+						"Post"
+					],
+					"query": [
+						{
+							"key": "debitCardNumber",
+							"value": "T0123"
+						},
+						{
+							"key": "operationType",
+							"value": "Receive"
+						},
+						{
+							"key": "amount",
+							"value": "500"
+						}
 					]
 				}
 			},

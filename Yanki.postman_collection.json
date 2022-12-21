@@ -124,7 +124,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/Yanki/Post?debitCardNumber=T0123&type=Receive&amount=500",
+					"raw": "http://localhost:9090/Yanki/Post?debitCardNumber=T0123&type=Send&amount=1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -141,11 +141,11 @@
 						},
 						{
 							"key": "type",
-							"value": "Receive"
+							"value": "Send"
 						},
 						{
 							"key": "amount",
-							"value": "500"
+							"value": "1"
 						}
 					]
 				}

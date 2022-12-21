@@ -224,7 +224,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/Account/DepositBalance/A00017/100",
+					"raw": "http://localhost:9090/Account/DepositBalance/AC00004/100",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -233,7 +233,7 @@
 					"path": [
 						"Account",
 						"DepositBalance",
-						"A00017",
+						"AC00004",
 						"100"
 					]
 				}
@@ -246,7 +246,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/Account/WithdrawBalance/A00017/10",
+					"raw": "http://localhost:9090/Account/WithdrawBalance/AC00004/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -255,8 +255,8 @@
 					"path": [
 						"Account",
 						"WithdrawBalance",
-						"A00017",
-						"10"
+						"AC00004",
+						"1"
 					]
 				}
 			},

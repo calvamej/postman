@@ -9,7 +9,19 @@
 			"name": "FindAll",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/BootcoinOperation/FindAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"BootcoinOperation",
+						"FindAll"
+					]
+				}
 			},
 			"response": []
 		},
@@ -17,7 +29,19 @@
 			"name": "GetPurchaseRequests",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/BootcoinOperation/GetPurchaseRequests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"BootcoinOperation",
+						"GetPurchaseRequests"
+					]
+				}
 			},
 			"response": []
 		},
@@ -27,7 +51,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/BootcoinOperation/AcceptPurchaseRequest/63a33b278f365815c8915949/88888888",
+					"raw": "http://localhost:9090/BootcoinOperation/AcceptPurchaseRequest/63a364edf1017d4fb98e6776/88888888",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -36,8 +60,29 @@
 					"path": [
 						"BootcoinOperation",
 						"AcceptPurchaseRequest",
-						"63a33b278f365815c8915949",
+						"63a364edf1017d4fb98e6776",
 						"88888888"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByOperationNumber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/BootcoinOperation/GetByOperationNumber/3b35d15e-3f87-495a-8026-33684cd33065",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"BootcoinOperation",
+						"GetByOperationNumber",
+						"3b35d15e-3f87-495a-8026-33684cd33065"
 					]
 				}
 			},
